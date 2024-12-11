@@ -2,7 +2,7 @@ import sys
 import re
 
 
-
+#part2
 def calc(s):
     s = s[s.index('(')+1:s.index(')')].split(',')
    
