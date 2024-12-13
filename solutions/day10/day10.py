@@ -34,6 +34,7 @@ def find_trails(i,j,visited,part):
     return res if flag else 0
     
 res = 0
+
 for i in range(len(grid)):
     for j in range(len(grid[0])):
         if grid[i][j] == '0':
