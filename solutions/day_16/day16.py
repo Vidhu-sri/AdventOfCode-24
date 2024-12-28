@@ -28,21 +28,21 @@ def is_turn(p1:complex,p2:complex,face:str)->bool:
     return target_vector == dir_map[face]*1j or target_vector == dir_map[face]*(-1j)
 
 
-def reconstruct_path(start,goal,prev):
+# def reconstruct_path(start,goal,prev):
     
 
-    for d in dir_map:
-        if (goal,d) in prev:
-            temp = (goal,d)
-            break
-    path = []
+#     for d in dir_map:
+#         if (goal,d) in prev:
+#             temp = (goal,d)
+#             break
+#     path = []
 
-    while temp in prev:
-        path.append(temp[0])
-        temp = prev[temp]
-    path.append((start,'>'))
-    path.reverse()
-    return path
+#     while temp in prev:
+#         path.append(temp[0])
+#         temp = prev[temp]
+#     path.append((start,'>'))
+#     path.reverse()
+#     return path
 
 def a_star(graph,start, goal):
 
