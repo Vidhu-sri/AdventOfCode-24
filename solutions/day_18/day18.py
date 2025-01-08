@@ -52,8 +52,8 @@ def djikstra(start,goal,graph):
 
 
 #part2
-for idx,line in enumerate(sys.stdin):
-    print(idx)
+for line in sys.stdin:
+ 
     x,y = map(int,line.split(','))
     graph[complex(x,y)] = '#'
     d = djikstra(0+0j,complex(size-1,size-1), graph)

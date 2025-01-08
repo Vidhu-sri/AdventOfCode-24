@@ -37,9 +37,8 @@ def make(i,target,patterns):
             
     return res
 res = 0
-for idx,word in enumerate(words):
+for word in words:
     patterns= tuple(tool for tool in tools if tool in word)
-    print(idx)
     res+=make(0,word,patterns)
 print(res)
 
